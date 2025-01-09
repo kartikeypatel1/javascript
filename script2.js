@@ -165,14 +165,14 @@
 // }
 // document.write("You will be redirected to main page in 10 sec ");
 //     setTimeout('redirect()',10000);
-//  function validateForm(){
-//     var x=document.forms["myForm"]["fname"].value;
-//  }
-//  if(x==null||x=="")
-//  {
-//     alert("first name must be filled out");
-//     return false;
-//  }
+ function validateForm(){
+    var x=document.forms["myForm"]["fname"].value;
+ }
+ if(x==null||x=="")
+ {
+    alert("first name must be filled out");
+    return false;
+ }
  function validateForm(){
     var y=document.forms["myForm"]["call"].value;
     if(y.length!=10){
@@ -184,3 +184,8 @@
         return false
     }
  }
+ function validateForm(){
+    var x=document.forms["myForm"]["email"].value;
+    var atpos=x.indexOf("@");
+    var dotpos=x.lastIndexOf(".")
+}
